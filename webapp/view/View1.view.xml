@@ -1,12 +1,12 @@
 <mvc:View controllerName="CustomControl.DemoApp_CustControl.controller.View1" xmlns:mvc="sap.ui.core.mvc" 
-displayBlock="true" xmlns="sap.m"  xmlns:myHeading="CustomControl.DemoApp_CustControl.MyControls" >
+displayBlock="true" xmlns="sap.m"  xmlns:ct="CustomControl.DemoApp_CustControl.control" >
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<myHeading:controls text="Himanshu" color="yellow"></myHeading:controls>
-						<myHeading:controls text="Dewan" ></myHeading:controls>
+						<ct:customStyle src1="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="himanshu"></ct:customStyle>
+						
 					</content>
 				</Page>
 			</pages>
