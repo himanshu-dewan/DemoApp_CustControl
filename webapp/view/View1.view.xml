@@ -1,0 +1,15 @@
+<mvc:View controllerName="CustomControl.DemoApp_CustControl.controller.View1" xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" xmlns="sap.m"  xmlns:myHeading="CustomControl.DemoApp_CustControl.MyControls" >
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<myHeading:controls text="Himanshu" color="yellow"></myHeading:controls>
+						<myHeading:controls text="Dewan" ></myHeading:controls>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
