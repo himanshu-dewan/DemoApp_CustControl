@@ -5,7 +5,7 @@ sap.ui.define([
 
 	return Controller.extend("CustomControl.DemoApp_CustControl.controller.View1", {
 		onInit: function () {
-      // this is just to test the git commit
+      // this is just to test the git commit#3
 		}
 	});
 });
