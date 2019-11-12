@@ -1,12 +1,16 @@
-<mvc:View controllerName="CustomControl.DemoApp_CustControl.controller.View1" xmlns:mvc="sap.ui.core.mvc" 
-displayBlock="true" xmlns="sap.m"  xmlns:ct="CustomControl.DemoApp_CustControl.control" >
+<mvc:View controllerName="CustomControl.DemoApp_CustControl.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:myControl="CustomControl.DemoApp_CustControl.Control">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
+				<Page id="page">
 					<content>
-						<ct:customStyle src1="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="himanshu"></ct:customStyle>
-						
+						<Carousel>
+							<pages>
+							<myControl:customStyle id='image_ctrl' src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" width="100px" height="100px"
+							 myFunction="onClick"></myControl:customStyle>
+							 </pages>
+						</Carousel>
 					</content>
 				</Page>
 			</pages>

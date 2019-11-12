@@ -1,4 +1,4 @@
-sap.ui.define([
+/*sap.ui.define([
 	"sap/ui/core/Control"
 	],function(Control){
 		"use strict";
@@ -24,10 +24,10 @@ sap.ui.define([
 			oRm.write("<img");
 			oRm.addClass("img1");
 			oRm.writeClasses();
-			oRm.writeAttributeEscaped("src",oControl.getsrc1());
+			oRm.writeAttributeEscaped("src",oControl.getSrc1());
 			oRm.write(">");
 			oRm.write("</img>");
-			oRm.write("<div> name: "+oControl.gettitle()+"</div>");
+			oRm.write("<div> name: "+oControl.getTitle()+"</div>");
 			oRm.write("</div>");
 		},
 		onAfterRendering : function(evt){},
@@ -42,3 +42,22 @@ sap.ui.define([
 		
 		});
 	});
+	*/
+
+sap.ui.define([
+	"sap/m/Image"
+], function (Image) {
+	return Image.extend("CustomControl.DemoApp_CustControl.Control.customStyle", { //inherit Button definition                                      
+		metadata: {
+			events: {
+				"myFunction": {} //new event definition hover
+			}
+		},
+		renderer: {},
+		onmouseover: function () {
+				this.fireMyFunction();
+			}
+			//Standard renderer method is not overridden
+	});
+
+});
